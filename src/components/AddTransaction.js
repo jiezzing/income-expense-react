@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { useAlert } from 'react-alert';
 import { GlobalContext } from '../context/GlobalState';
+import { Message } from '../Message';
 
 export const AddTransaction = () => {
     const alert = useAlert();
@@ -10,12 +11,12 @@ export const AddTransaction = () => {
     const [text, setText] = useState('');
     const [amount, setAmount] = useState(0);
 
-    function isTextExist(data) {
+    function isTextExist(transactions) {
         let textExist = false;
 
-        if (data.length > 0) {
-            data.map(result => {
-                if (result.text.toUpperCase() == text.toUpperCase()) {
+        if (transactions.length > 0) {
+            transactions.map(transaction => {
+                if (transaction.text.toUpperCase() == text.toUpperCase()) {
                     textExist = true;
                 }
             });
@@ -28,11 +29,11 @@ export const AddTransaction = () => {
         e.preventDefault();
 
         if (!text) {
-            return alert.error('Text should not be empty');
+            return alert.error(Message.text_empty);
         }
         
         if (amount == 0) {
-            return alert.error('Amount should not be 0');
+            return alert.error(Message.amount_zero);
         }
 
         if (!isTextExist(transactions)) {
@@ -44,7 +45,7 @@ export const AddTransaction = () => {
     
             addTransaction(newTransaction);
         } else {
-            alert.error("Text already exist");
+            alert.error(Message.text_exist);
         }
     }
 
