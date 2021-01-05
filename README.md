@@ -27,12 +27,10 @@
 - mern (connected to mongodb database)
 
 ## git checkout no-database
-Features:
 - this branch only have default values (values within state)
 - can perform addition and subtraction of the expenses
 
 ## git checkout mern 
-Features:
 - created own server setup, dotenv and port 
 - added mongodb as its database
 - able to connect server and client
