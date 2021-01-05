@@ -1,6 +1,6 @@
-## This project is intended to enhance my skills on react library.
+## This project is intended to enhance my skills on React.
 
-# Dependencies that has been used
+## Dependencies that has been used
 - express
 - dotenv
 - mongoose
@@ -22,14 +22,14 @@
     - choose CONNECT YOUR APPLICATION as connection method
     - copy and add/replace the MONGO_URI connection string value in config.env file
 
-# Branches
+## Branches
 - no-dabase (this branch has no database)
 - mern (this branch has mongodb database connection)
 
-# git checkout no-database
+## git checkout no-database
 - this branch only have default values (values within state)
 - can perform addition and subtraction of the expenses
 
-# git checkout mern 
+## git checkout mern 
 - created own server setup, .env variables and port 
 - added mongodb as its database
