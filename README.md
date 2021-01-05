@@ -7,7 +7,7 @@
 - colors (https://www.npmjs.com/package/colors)
 - morgan (https://www.npmjs.com/package/morgan)
 
-## Setting Up Your Database
+## Setting Up Database
 - create an account in mongodb.com (start for FREE)
 - SKIP the Account Setup
 - create a cluster (FREE)
@@ -23,8 +23,8 @@
     - copy and add/replace the MONGO_URI connection string value in config.env file
 
 ## Branches
-- no-dabase (this branch has no database)
-- mern (this branch has mongodb database connection)
+- no-dabase (not connected to any database)
+- mern (connected to mongodb database)
 
 ## git checkout no-database
 Features:
