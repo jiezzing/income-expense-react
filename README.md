@@ -1,11 +1,11 @@
 ## This project is intended to enhance my skills on React.
 
-## Dependencies that has been used
-- express
-- dotenv
-- mongoose
-- colors
-- morgan
+## Packages that has been used
+- express (https://www.npmjs.com/package/express)
+- dotenv (https://www.npmjs.com/package/dotenv)
+- mongoose (https://www.npmjs.com/package/mongoose)
+- colors (https://www.npmjs.com/package/colors)
+- morgan (https://www.npmjs.com/package/morgan)
 
 ## Setting Up Your Database
 - create an account in mongodb.com (start for FREE)
@@ -27,9 +27,13 @@
 - mern (this branch has mongodb database connection)
 
 ## git checkout no-database
+Features:
 - this branch only have default values (values within state)
 - can perform addition and subtraction of the expenses
 
 ## git checkout mern 
-- created own server setup, .env variables and port 
+Features:
+- created own server setup, dotenv and port 
 - added mongodb as its database
+- able to connect server and client
+- can fetch, add and delete transactions dynamically from database
